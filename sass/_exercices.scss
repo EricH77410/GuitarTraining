@@ -1,0 +1,19 @@
+.exercices {
+    margin-top: 3rem;
+}
+
+.exo {
+    border: solid .5rem $color-grey-dark-1;
+    width: 90%;
+    margin: 0 auto;
+
+    &__title {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+}
