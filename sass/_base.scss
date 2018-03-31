@@ -46,4 +46,11 @@ body {
 
 .container {
     display: grid;
+    grid-template-columns: 20rem 90rem;
+    grid-template-rows: 10rem 50rem 10rem;
+}
+
+.main {
+    grid-row: 2 / span 1;
+    grid-column: 2 / -1;
 }

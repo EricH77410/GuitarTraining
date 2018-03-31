@@ -19,7 +19,13 @@ body {
   line-height: 1.6; }
 
 .container {
-  display: grid; }
+  display: grid;
+  grid-template-columns: 20rem 90rem;
+  grid-template-rows: 10rem 50rem 10rem; }
+
+.main {
+  grid-row: 2 / span 1;
+  grid-column: 2 / -1; }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
@@ -89,6 +95,28 @@ body {
     font-size: 3rem; }
   .exo__img {
     width: 100%; }
+  .exo__audio {
+    margin: 0 25%;
+    width: 50%; }
 
 .header {
-  margin: 5rem; }
+  margin: 5rem;
+  grid-row: 1 / 1;
+  grid-column: 1 / -1;
+  text-align: center; }
+
+.list {
+  grid-row: 2 / -1;
+  grid-column: 1 / span 1;
+  font-size: 2rem;
+  margin-left: 1rem; }
+  .list__container {
+    list-style: none;
+    padding: 1rem;
+    text-align: center; }
+  .list__item:hover {
+    background-color: #c69963;
+    cursor: pointer;
+    color: #fff; }
+  .list__active {
+    color: #c69963; }

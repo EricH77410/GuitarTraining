@@ -1,0 +1,22 @@
+.list {
+    grid-row: 2 / -1;
+    grid-column: 1 / span 1;    
+    font-size: 2rem;
+    margin-left: 1rem;
+
+    &__container {
+        list-style: none;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    &__item:hover {
+        background-color: $color-primary;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    &__active {
+        color: $color-primary;
+    }
+}
