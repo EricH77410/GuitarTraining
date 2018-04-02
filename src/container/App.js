@@ -13,7 +13,7 @@ class App extends Component {
 
   changeActiveItem = (id) => {
     this.setState({
-      active_item: db[0].exo[id]
+      active_item: db[0].exo[id-1]
     })
   }
 
