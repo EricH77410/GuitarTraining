@@ -5,13 +5,18 @@ export default class List extends React.Component {
     render(){
         const renderList = this.props.exercices.map((item) => {
             return (
-                <li key={item.id} className="list__item">{item.title}</li>
+                <li 
+                    key={item.id} 
+                    className="list__item"
+                    onClick={()=>this.props.setActive(item.id)}>
+                    {item.title}
+                </li>
             )
         });
 
         return (
-            <section class="list">
-                <ul class="list__container">
+            <section className="list">
+                <ul className="list__container">
                     {renderList}
                 </ul>
             </section>

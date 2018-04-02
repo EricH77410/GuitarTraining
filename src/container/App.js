@@ -10,11 +10,18 @@ class App extends Component {
     active_jam: db[0],
     active_item: db[0].exo[0]
   }
+
+  changeActiveItem = (id) => {
+    this.setState({
+      active_item: db[0].exo[id]
+    })
+  }
+
   render() {
     return (
       <div className="container">
         <Header title={this.state.active_jam.title}/>        
-        <List exercices={this.state.active_jam.exo}/>
+        <List exercices={this.state.active_jam.exo} setActive={this.changeActiveItem}/>
         <Item data={this.state.active_item}/>
       </div>
     );
